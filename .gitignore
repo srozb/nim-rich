@@ -1,0 +1,53 @@
+# Compiled binaries (Nim C backend) — never track these
+golden_nim
+demo
+bench_full
+test_*
+probe*
+provider
+
+# Binaries that Nim drops next to sources when `--out:` points into src/
+src/nim_rich/align
+src/nim_rich/api_types
+src/nim_rich/box
+src/nim_rich/cells
+src/nim_rich/color
+src/nim_rich/control
+src/nim_rich/errors
+src/nim_rich/measure
+src/nim_rich/padding
+src/nim_rich/panel
+src/nim_rich/protocol
+src/nim_rich/ratio
+src/nim_rich/richbase
+src/nim_rich/segment
+src/nim_rich/style
+src/nim_rich/text
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Nim build artifacts
+*.o
+*.nimcache/
+nimcache/
+.scratch/
+
+# MEA / lh-harness artifacts
+.lh-harness/
+.fanout/
+child_tasks/
+.tmpcheck/
+.probe*
+
+# Demo/bench output (regenerowane)
+demo_*.html
+demo_*.txt
+demo_python.txt
+bench_*.txt
+bench_comparison.txt
+
+# tmp / backup
+tmp_test/
+*.bak
